@@ -7,8 +7,13 @@ import { usePanelState } from "../hooks/use-panel-state";
 
 export function PanelWorkspace() {
   const sensors = usePanelSensors();
-  const { orderedPanels, openPanelIds, panelOpenState, setPanelOpen, handleDragEnd } =
-    usePanelState();
+  const {
+    orderedPanels,
+    openPanelIds,
+    panelOpenState,
+    setPanelOpen,
+    handleDragEnd,
+  } = usePanelState();
 
   return (
     <main className="flex h-screen min-h-screen overflow-hidden border border-[#d6d6d6] bg-[#efefef] text-[#111827]">

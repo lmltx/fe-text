@@ -12,7 +12,12 @@ type SortablePanelProps = {
   isFirst: boolean;
 };
 
-export function SortablePanel({ id, title, onClose, isFirst }: SortablePanelProps) {
+export function SortablePanel({
+  id,
+  title,
+  onClose,
+  isFirst,
+}: SortablePanelProps) {
   const {
     attributes,
     listeners,

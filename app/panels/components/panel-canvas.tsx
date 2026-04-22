@@ -36,7 +36,10 @@ export function PanelCanvas({
     >
       <div className="h-full overflow-x-auto overflow-y-hidden bg-[#efefef]">
         {openPanelIds.length > 0 ? (
-          <SortableContext items={openPanelIds} strategy={horizontalListSortingStrategy}>
+          <SortableContext
+            items={openPanelIds}
+            strategy={horizontalListSortingStrategy}
+          >
             <div className="flex h-full min-w-max touch-pan-x md:min-w-full">
               {openPanelIds.map((panelId, index) => (
                 <SortablePanel

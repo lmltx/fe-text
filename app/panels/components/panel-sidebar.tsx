@@ -33,7 +33,9 @@ export function PanelSidebar({
                 }`}
               >
                 <Icon className="h-10 w-10" />
-                <span className="text-[2.1rem] leading-none tracking-tight">{title}</span>
+                <span className="text-[2.1rem] leading-none tracking-tight">
+                  {title}
+                </span>
               </button>
             </li>
           );
